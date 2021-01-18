@@ -13,9 +13,9 @@ title: Spring 2021 Workshops
 - For more information about myself you can check out my [personal website](https://hectorenevarez.github.io/)
 
 # Table of Contents
-##### &ensp;[Python Introduction](#) **(WIP)**
-##### &ensp;[Python Advanced](#) **(WIP)**
-##### [Computer Vision: Object Detection](#) **(WIP)**
+##### &ensp;&ensp;&ensp;[Python Introduction](#) **(WIP)**
+##### &ensp;&ensp;[Python Advanced](#) **(WIP)**
+##### &ensp;[Computer Vision: Object Detection](#) **(WIP)**
 ##### [Computer Vision: Object Tracking](#) **(WIP)**
 ##### [AI-A-THON: Computer Vision](#) **(WIP)**
 ##### [Sentiment Analysis](#) **(WIP)**

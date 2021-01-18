@@ -2,3 +2,15 @@ remote_theme: allejo/jekyll-docs-theme@v1.0.0
 
 ui:
   mode: 'light'
+  
+links: 
+  header:
+    - title: Github
+      icon: github
+      brand: true
+      url: https://github.com/HectorENevarez/AIClubWorkshopsSpring21
+
+social:
+  github:
+    user: HectorENevarez
+    repo: AIClubWorkshopsSpring21

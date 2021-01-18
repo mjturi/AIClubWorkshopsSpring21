@@ -2,6 +2,7 @@
 layout: full
 homepage: true
 disable_anchors: true
+show_in_menu: true
 title: Spring 2021 Workshops
 ---
 

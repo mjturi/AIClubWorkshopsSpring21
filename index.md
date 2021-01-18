@@ -3,7 +3,6 @@ layout: full
 homepage: true
 disable_anchors: true
 title: Spring 2021 Workshops
-description: This site holds all the workshops for the [SDSU AI Club's](https://aiclub.sdsu.edu/) weekly workshops in the spring 2021 semester
 ---
 
 You can use the [editor on GitHub](https://github.com/HectorENevarez/AIClubWorkshopsSpring21/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.

@@ -13,7 +13,12 @@ title: Spring 2021 Workshops
 - For more information about myself you can check out my [personal website](https://hectorenevarez.github.io/)
 
 # Table of Contents
-## [Python Introduction](#)
-This workshop serves as a refresher or introduction to python. It goes over python basics such as data types, data structures, and syntax
-## [Python Advanced](#)
-afasdasd
+### [Python Introduction](#) **(WIP)**
+### [Python Advanced](#) **(WIP)**
+### [Computer Vision: Object Detection](#) **(WIP)**
+### [Computer Vision: Object Tracking](#) **(WIP)**
+### [AI-A-THON: Computer Vision](#) **(WIP)**
+### [Sentiment Analysis](#) **(WIP)**
+### [TBA](#) **(WIP)**
+### [AI-A-THON: Natural Language Processing](#) **(WIP)**
+### [Anomaly Detection](#) **(WIP)**

@@ -1,5 +1,7 @@
 remote_theme: allejo/jekyll-docs-theme@v1.0.0
 
+name: SDSU's AI Club Workshops
+
 ui:
   mode: 'light'
   

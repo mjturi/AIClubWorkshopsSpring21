@@ -11,3 +11,9 @@ title: Spring 2021 Workshops
 - For further information regarding the workshops you can contact me through my email: <hnevarez1285@sdsu.edu>
 - For general club questions you can contact our club email: <sdsuaiclub@gmail.com>
 - For more information about myself you can check out my [personal website](https://hectorenevarez.github.io/)
+
+# Table of Contents
+## [Python Introduction](#)
+This workshop serves as a refresher or introduction to python. It goes over python basics such as data types, data structures, and syntax
+## [Python Advanced](#)
+afasdasd

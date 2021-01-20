@@ -11,7 +11,7 @@ The SDSU AI Club will be hosting its **first ever** small scale virtual coding c
 
 The AI-A-THON is open to current club members as well as SDSU students. We encourage anyone, regardless of background to join and attempt to grow as a developer. Our club will be providing guidance and mentorship throughout the event so no group or individual feels left behind. This is an opportunity that brings collaboration, empowerment, and innovation in a span of 2 weeks.
 
-## Sturcture
+## Structure
 Going into the competition it's important to understand the process of the event. In the following section, the structure and timeline of the event will be broken down.
 
 ### Registration

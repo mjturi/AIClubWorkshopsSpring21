@@ -9,7 +9,7 @@ disable_anchors: true
 
 The SDSU AI Club will be hosting its **first ever** small scale virtual coding competition. This compeition can be seen as similar to a mini hackathon. The competition involves an individual or a group tackling an artificial intellegence related problem by creating a tool or application. As mentioned the theme of the competition will be related to AI however, the actual guidelines won't be revealed until the day of the competition.
 
-We encourage anyone, regardless of background to join and attempt to grow as a developer. Our club will be providing guidance and mentorship throughout the event so no group or individual 
+The AI-A-THON is open to current club members as well as SDSU students. We encourage anyone, regardless of background to join and attempt to grow as a developer. Our club will be providing guidance and mentorship throughout the event so no group or individual feels left behind. This is an opportunity that brings collaboration, empowerment, and innovation in a span of 2 weeks.
 
 
 

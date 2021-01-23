@@ -5,11 +5,6 @@ show_in_menu: false
 disable_anchors: true
 ---
 
-# test
-```python
-hello = 5
-```
-
 ## Introduction
 ### Syntax
 Let's remember the syntax of the python language. We don't have to declare a specific data type or use semicolons

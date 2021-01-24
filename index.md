@@ -27,4 +27,8 @@ title: Spring 2021 Workshops
 Here I left resources that I have created or used when learning different AI concepts
 #### Learning Python
 - [Introduction To Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop1/python_tutorial) a simple tutorial I created
-- [Advanced Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop2/Advanced_python.html) a more advanced python tutorial I created
+- [Advanced Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop2/Advanced_python.html) a more advanced Python tutorial I created
+- [Learn Python Programming:](https://www.programiz.com/python-programming) A website that teaches Python in detail
+
+#### Neural Networks
+- [Neural Networks Tutorial](https://colab.research.google.com/drive/1lnqrLF2NBJgoSeAf_WD3pqnGgVjFmazV?usp=sharing) An in depth explanation of how Neural Networks function by Joshua Zingale

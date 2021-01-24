@@ -13,7 +13,7 @@ title: Spring 2021 Workshops
 - For more information about myself you can check out my [personal website](https://hectorenevarez.github.io/)
 
 # Table of Contents
-- [Python Refresher](https://github.com/HectorENevarez/AIClubWorkshopsSpring21/blob/gh-pages/pythonrefresher/python.md)
+- [Python Refresher](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/pythonrefresher/python)
 - [Python Advanced](#) **(WIP)**
 - [Computer Vision: Object Detection](#) **(WIP)**
 - [Computer Vision: Object Tracking](#) **(WIP)**
@@ -25,6 +25,6 @@ title: Spring 2021 Workshops
 
 # Resources
 Here I left resources that I have created or used when learning different AI concepts
-## Learning Python
+#### Learning Python
 - [Introduction To Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop1/python_tutorial)a simple tutorial I created
 - [Advanced Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop2/Advanced_python.html)a more advanced python tutorial I created

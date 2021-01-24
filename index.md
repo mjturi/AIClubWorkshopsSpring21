@@ -26,5 +26,5 @@ title: Spring 2021 Workshops
 # Resources
 Here I left resources that I have created or used when learning different AI concepts
 #### Learning Python
-- [Introduction To Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop1/python_tutorial)a simple tutorial I created
-- [Advanced Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop2/Advanced_python.html)a more advanced python tutorial I created
+- [Introduction To Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop1/python_tutorial) a simple tutorial I created
+- [Advanced Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop2/Advanced_python.html) a more advanced python tutorial I created

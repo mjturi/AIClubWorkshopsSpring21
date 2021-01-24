@@ -14,14 +14,14 @@ title: Spring 2021 Workshops
 
 # Table of Contents
 - [Python Refresher](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/pythonrefresher/python)
-- [Python Advanced](#) **(WIP)**
 - [Computer Vision: Object Detection](#) **(WIP)**
 - [Computer Vision: Object Tracking](#) **(WIP)**
-- [AI-A-THON: Computer Vision](#) **(WIP)**
 - [Sentiment Analysis](#) **(WIP)**
 - [TBA](#) **(WIP)**
-- [AI-A-THON: Natural Language Processing](#) **(WIP)**
 - [Anomaly Detection](#) **(WIP)**
+
+# AI-A-THON
+More information regarding the AI-A-THON to be posted in the coming weeks
 
 # Resources
 Here I left resources that I have created or used when learning different AI concepts

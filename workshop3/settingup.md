@@ -35,19 +35,4 @@ This should list all your installed packages. There you should see ```numpy```, 
 Finally, you'll need to download the required files. From my dropbox download the following folder
 - [Object Detection Workshop](https://www.dropbox.com/sh/dr6zc9m3rut0jwb/AAC-m8ihRpwXlMuf_WqLJASda?dl=0)
 
-Once it is downloaded unzip the folder and open it on your code editor. The folder structure should look as shown below
-
-- talk about how to set up python on computer
-- talk about files they need to download
-
-# Object Detection Workshop
-In this workshop we will be creating an object detection software. In the gif below, I give a visual example of what we will be creating.
-
-# Tools
-The tools we will be using to create this software are:
-- Python 3.x
-- YOLOv3 through CPU
-- OpenCV
-- Numpy
-- Imutils
-
+Once it is downloaded unzip the folder and open it on your code editor.

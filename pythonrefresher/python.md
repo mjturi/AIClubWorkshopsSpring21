@@ -28,7 +28,7 @@ Hector
 ```
 
 ### Data Types
-Python has six standard data types. In this portion we will only look through 3 of the data types; Integer, Float, and boolean. We can use the ```type()``` function to check the type of data type in a variable.
+Python has six standard data types. In this portion we will only look through 3 of the data types; Integer, Float, and boolean. We can use the ```type()``` function to check the type of a variable.
 ```python
 number = 100 # This is an integer because it is a whole number
 decimal = 10.5 # This is a float because it has a decimal
@@ -40,7 +40,7 @@ print(boolean, type(boolean))
 ```
 **output**
 ```
-10.5 <class 'float'>
+100 <class 'int'>
 10.5 <class 'float'>
 True <class 'bool'>
 ```
@@ -106,7 +106,6 @@ while a != 5:
 ### Importing Modules
 When importing modules, we usually keep this information at the top of our script
 ```python
-
 #To use math functions we must import the math module
 import math
 
@@ -116,7 +115,6 @@ print(x)
 
 We can also give an alias to our modules for future reference
 ```python
-
 #We can also give aliases to packages
 import math as m #You can change this alias to what you want
 

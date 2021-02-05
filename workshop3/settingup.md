@@ -35,4 +35,4 @@ This should list all your installed packages. There you should see ```numpy```, 
 Finally, you'll need to download the required files. From my dropbox download the following folder
 - [Object Detection Workshop](https://www.dropbox.com/sh/dr6zc9m3rut0jwb/AAC-m8ihRpwXlMuf_WqLJASda?dl=0)
 
-Once it is downloaded unzip the folder and open it on your code editor.
+Once it is downloaded unzip the folder and open it on your code editor and your all ready to get started for the workshop.

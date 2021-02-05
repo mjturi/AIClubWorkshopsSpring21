@@ -29,8 +29,8 @@ Here I left resources that I have created or used when learning different AI con
 - [Computer Vision](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop3/settingup) Quick guide on getting everything set up for the computer vision workshops
 
 #### Learning Python
-- [Introduction To Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop1/python_tutorial) a simple tutorial I created
-- [Advanced Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop2/Advanced_python.html) a more advanced Python tutorial I created
+- [Introduction To Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop1/python_tutorial) a simple tutorial I created : [**Video Version**](https://www.youtube.com/watch?v=jXLiFqFxmO4&feature=youtu.be)
+- [Advanced Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop2/Advanced_python.html) a more advanced Python tutorial I created : [**Video Version](https://www.youtube.com/watch?v=xy09XNUykho&feature=youtu.be)
 - [Learn Python Programming:](https://www.programiz.com/python-programming) A website that teaches Python in detail
 
 #### Neural Networks

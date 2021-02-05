@@ -5,7 +5,7 @@ show_in_menu: false
 disable_anchors: true
 ---
 
-# Before Attending Workshop
+# Workshop Preparation
 For this workshop we will have a live coding session. In order to participate in that portion, you'll need to have your python environment all set up with the proper packages as
 well as download any necessary files. Follow the steps below in order to get started.<br>
 

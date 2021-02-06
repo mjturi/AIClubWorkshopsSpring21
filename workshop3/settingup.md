@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Object Detection
+title: Workshop Setup
 show_in_menu: false
 disable_anchors: true
 ---

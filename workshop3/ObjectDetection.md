@@ -28,3 +28,9 @@ import argparse
 import imutils
 import cv2
 ```
+
+Let's take alook at what these modules actually do:
+- [NumPy](https://numpy.org/devdocs/user/whatisnumpy.html): This module is used for numerical computations in Python. It gives us access to an array object which has a ton of support for different mathematical operations and runs quick
+- [argparse](https://docs.python.org/3/library/argparse.html): This module allows us to parse user command line arguments
+- [Imutils](https://github.com/jrosebr1/imutils): This module provides convenient functions for OpenCV as some OpenCV functions can be a bit complicated
+- [OpenCV](https://opencv.org/): As mentioned above we use this module is used for real-time computer vision applications

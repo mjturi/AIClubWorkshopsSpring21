@@ -215,6 +215,6 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
-# Wrapping UP
+# Wrapping Up
 
 And thats the entire project. A super simple implementation of the YOLO object detector using OpenCV. Hopefully you learned something new this week!

@@ -148,5 +148,73 @@ for output in layerOutputs:
 
 Here we first iterate through every layerOutput. YOLO is structured a bit weird but there are 3 different layer outputs and each is responsible for detecting different groups of objects so we want to iterate through them all to find our results. We also iterate through every detection in the output so we can get every single detected object.
 
+Inside the nest for loop, we want to extract relevant data from each detection
 
+```python
+scores = detection[5:]
+classID = np.argmax(scores)
+confidence = scores[classID]
+```
 
+In this instance, scores gives us the probability of each of the 80 classes. It is a list with 80 different floats that give the probability of a detected object.
+USing that information, we take the highest probability and assign it as the detected object. We then grab that score and assign it to the confidence
+
+## Grabbing the Box Locations
+Now that we have the detections, in that same nest loop, we want to grab the locations of where the people are:
+```python
+if confidence > 0.5 and classID == 0:
+    box = detection[0:4] * np.array([WIDTH, HEIGHT, WIDTH, HEIGHT])
+    centerX, centerY, w, h = box.astype("int")
+
+    x = int(centerX - (w / 2))
+    y = int(centerY - (h / 2))
+```
+
+Here we have an if statement that will only execute if the model is atleast 50% confident about its detection and if it is classID = 0. The classID is the type of object is it. If you look in the ```models/coco.names``` file you can see all the classes in order. The first class, 0th index, is labeled person. So here we are only drawing our detections for people.
+
+Now when we're inside the if condition, we want to get the location of the people relative to the frame. Our model detected objects relative to the frames position after it was preprocessed. We want to convert those results by multiplying those values with the height and width of the frame to properly convert and accurately locate the object. We then take these converted values and assign them to 4 different variables.
+
+Lastly, we want the x and y coordinates of the top left corner. We want these values because when we draw the rectangle around each distinct person, we have to specify opposite diagonal corners. This conversion will allow us to do that.
+
+## Non-maxima suppresion
+YOLO does not apply non-maxima suppression for us. Non-maxima suppresion helps to suppress overlapping bounding boxes.
+
+<img src="https://pyimagesearch.com/wp-content/uploads/2014/10/nms_slow_01.jpg"
+     alt="NMS"
+     style="float: left; margin-right: 10px;" />
+     
+For more information on this process check out [this blog post on NMS](https://www.pyimagesearch.com/2014/11/17/non-maximum-suppression-object-detection-python/)
+
+Now, let's actually apply the NMS to our detections:
+```python
+index = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.3)
+```
+
+Here we simply just used the ```NMSBoxes``` function from OpenCV. For our arguments, we just specified the bounding boxes, their associated confidences, a confidence threshold, and a NMS threshold.
+
+# Printing out results
+Now for the final part of the code we can take our obtained data and print it out on every frame in order to show our detections.
+
+## Rectangle Function
+Now we can take our results and display them. We first have an if statement to check if there are even any detections. Afterwards we run all of our detections in a for loop
+```python
+if len(index) > 0:
+    for i in index.flatten(): #Flatten to convert results from 2D array to 1D array
+        (x, y) = (boxes[i][0], boxes[i][1])
+        (w, h) = (boxes[i][2], boxes[i][3])
+
+    cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+```
+
+Then we extract the different coordinates and use the rectangle function to draw our results
+
+# Closing Files
+Lastly we want to close any files, windows, and captures that we opened using the ```imshow()``` function and the ```VideoCapture``` object:
+```python
+cap.release()
+cv2.destroyAllWindows()
+```
+
+# Wrapping UP
+
+And thats the entire project. A super simple implementation of the YOLO object detector using OpenCV. Hopefully you learned something new this week!

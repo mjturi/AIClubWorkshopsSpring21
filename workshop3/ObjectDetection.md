@@ -44,3 +44,54 @@ args = vars(ap.parse_args())
 ```
 
 Here we create an instance of the ```ArgumentParser``` object. We then add a required argument which requires the user to specify the path to a video feed that they would want our software to operate on. Lastly we grab all the arguments and store them inside our args variables as ```vars``` which stores objects inside a dictionary object.
+
+### Loading in the Model
+Now we have to load in the YOLO model. First, we'll load in the YOLO model:
+```python
+net = cv2.dnn.readNetFromDarknet("models/yolov3.cfg", "models/yolov3.weights")
+```
+
+To load in the model we used OpenCV's DNN function. This function is able to interepret YOLO's weights and configuration. In Layman's terms, this loads in the YOLO object detection model
+
+We also have to load in the class names for YOLO. As I had mentioned, yolo is able to detect up to up to 80 different objects. We want to get these object names in order to reference them later when we only detect for people.
+
+```python
+ln = net.getLayerNames()
+ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
+```
+
+Here we get the unconnected layers from the model. To understand this concept you need to understand the structure of a Neural Network. If you don't understand the structure of a Neural Network its ok, we are essentially just getting the different labels for the objects it contains by grabbing the final layer of the neural network which typically has the output layer. The output layer determines what the model classified something as.
+
+I also included, by accident, another form of getting the labels of detected objects:
+```python
+LABELS = open("models/coco.names").read().strip().split("\n")
+```
+
+Here we use a file that already has the names of the output layer. We won't be using this implementation, but just know it is an alternative
+
+### Capturing Video
+Lastly, before we get started detecting objects in frame, we need to use OpenCV in order to process every frame in the video. We do that by creating a ```VideoCapture``` object in OpenCV:
+```python
+cap = cv2.VideoCapture(args["video"])
+```
+
+This will go and allow us to process the video. Here we pass in the video argument we require using the argparser library we previously implemented. We did this because it allows us to quickly change the video we want to process without directly changing the code.
+
+# Processing Every Frame
+The way in which we detect objects on a video is by running YOLO on every frame and visually diplaying our results. In this section we will be working inside an infinite while loop. This will allow us to go frame by frame running our results.
+
+As you can imagine this is computationally expensive. Running a model on every frame eats up a lot of memory. In this situation since we are processing our results using our CPU, it gets pretty expensive quick. There are more advanced methods to help with processing our results faster and getting a quick runtime speed but for the simplicity of this workshop, we will be keeping it like this
+
+### Reading a Frame
+Using the ```VideoCapture``` object we created, we'll extract the first frame:
+```python
+_, frame = cap.read()
+```
+Since ```cap.read()``` returns two values, we store the first value inside the underscore variable and the second inside the frame variable. We'll only be using the frame variable which is why we gave the other variable the name underscore. The frame variable holds an individual frame from a video.
+
+Now we also want to extract data from the frame for future use:
+```python
+HEIGHT, WIDTH, CHANNEL = frame.shape
+```
+
+This just gives us some useful information from the frame like the shape and height.

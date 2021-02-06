@@ -19,7 +19,7 @@ During last weeks meeting I mentioned that to participate in the live coding ses
 
 Let's go ahead and get started. In our project directory, we will be working in the ```objectDetectionWorkshop.py``` file.
 
-### Imports
+## Imports
 First we need to get all of our ```imports``` taken care of. At the top of our file we will see all the required imports:
 
 ```python
@@ -35,7 +35,7 @@ Let's take alook at what these modules actually do:
 - [Imutils](https://github.com/jrosebr1/imutils): This module provides convenient functions for OpenCV as some OpenCV functions can be a bit complicated
 - [OpenCV](https://opencv.org/): As mentioned above we use this module is used for real-time computer vision applications
 
-### Argument Parser
+## Argument Parser
 This section we use in order to parse our any required arguments
 ```python
 ap = argparse.ArgumentParser()
@@ -45,7 +45,7 @@ args = vars(ap.parse_args())
 
 Here we create an instance of the ```ArgumentParser``` object. We then add a required argument which requires the user to specify the path to a video feed that they would want our software to operate on. Lastly we grab all the arguments and store them inside our args variables as ```vars``` which stores objects inside a dictionary object.
 
-### Loading in the Model
+## Loading in the Model
 Now we have to load in the YOLO model. First, we'll load in the YOLO model:
 ```python
 net = cv2.dnn.readNetFromDarknet("models/yolov3.cfg", "models/yolov3.weights")

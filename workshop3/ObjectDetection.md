@@ -60,9 +60,9 @@ ln = net.getLayerNames()
 ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 ```
 
-Here we get the unconnected layers from the model. To understand this concept you need to understand the structure of a Neural Network. If you don't understand the structure of a Neural Network its ok, we are essentially just getting the different labels for the objects it contains by grabbing the final layer of the neural network which typically has the output layer. The output layer determines what the model classified something as.
+Here we get the unconnected layers from the model. To understand this concept you need to understand the structure of a Neural Network. If you don't understand the structure of a Neural Network its ok, we are just getting the proper output layers so when we run our model we can get the results later.
 
-I also included, by accident, another form of getting the labels of detected objects:
+I also included, by accident, a way of seeing all the different labels that YOLO has:
 ```python
 LABELS = open("models/coco.names").read().strip().split("\n")
 ```
@@ -120,3 +120,33 @@ First we create a blob object through OpenCV. Typically when you want to run a m
 <img src="https://pyimagesearch.com/wp-content/uploads/2017/11/blob_from_images_mean_subtraction.jpg"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
+
+If you're really interested in what happens behind the scenes of this function check out [PyImageSearch's](https://www.pyimagesearch.com/2017/11/06/deep-learning-opencvs-blobfromimage-works/) blog post.
+
+Now we pass in that blob information by setting it as an input and then having the model and saving our results to tha ```layerOutputs``` variable
+
+## Storing results
+For the next portion, we'll want to store our results so when we print our results, we'll have that information handy
+```python
+boxes = []
+confidences = []
+classIDs = []
+```
+
+Here we declare lists where we'll store information:
+- boxes: Here we will store all the bounding boxes coordinates for each person
+- confidences: This will give us the confidence level of the model when it makes a prediction
+- classIDs: This will tell us the class type of each object detected. We'll only be using the people class types
+
+## Iterating Through the Detections
+Now that the model made its detections, we'll want to go through them all and gather the results:
+
+```python
+for output in layerOutputs:
+    for detection in output:
+```
+
+Here we first iterate through every layerOutput. YOLO is structured a bit weird but there are 3 different layer outputs and each is responsible for detecting different groups of objects so we want to iterate through them all to find our results. We also iterate through every detection in the output so we can get every single detected object.
+
+
+

@@ -95,3 +95,25 @@ HEIGHT, WIDTH, CHANNEL = frame.shape
 ```
 
 This just gives us some useful information from the frame like the shape and height.
+
+## Displaying our frames
+I tend to put this section at the bottom of the while loop, however I always include it first so we can see what we're working with.
+```python
+cv2.imshow("frame", frame)
+
+if cv2.waitKey(1) & 0xFF == ord('q'):
+    break
+```
+
+Here the function ```imshow()``` displays our frame in its own window. We give the frame a name and then we give the information needed to print the frame. Here we also specify an early quit statement. Here we are checking to see if the user presses "q" while in frame, the video will exit.
+
+## Detecting Objects
+Now we can finally get into the object detection portion. We'll use our YOLO model to extract information from the frame and determine what has been detected
+```python
+blob = cv2.dnn.blobFromImage(frame, 1 / 255.0, (416, 416), swapRB=True, crop=False)
+net.setInput(blob)
+layerOutputs = net.forward(ln)
+```
+
+First we create a blob object through OpenCV. Typically when you want to run a model, you preprocess your data so it matches what the model is looking for. In this case the ```blobFromImage``` function sharpens our image and performs more specific preprocessing techniques. Here's an example:
+![Blob](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pyimagesearch.com%2F2017%2F11%2F06%2Fdeep-learning-opencvs-blobfromimage-works%2F&psig=AOvVaw2Ps9gmdchYJH7pyLuQkyaq&ust=1612729821200000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOjrgfSM1u4CFQAAAAAdAAAAABAD)

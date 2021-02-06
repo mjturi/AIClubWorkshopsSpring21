@@ -19,7 +19,7 @@ During last weeks meeting I mentioned that to participate in the live coding ses
 
 Let's go ahead and get started. In our project directory, we will be working in the ```objectDetectionWorkshop.py``` file.
 
-### 
+### Imports
 First we need to get all of our ```imports``` taken care of. At the top of our file we will see all the required imports:
 
 ```python
@@ -34,3 +34,13 @@ Let's take alook at what these modules actually do:
 - [argparse](https://docs.python.org/3/library/argparse.html): This module allows us to parse user command line arguments
 - [Imutils](https://github.com/jrosebr1/imutils): This module provides convenient functions for OpenCV as some OpenCV functions can be a bit complicated
 - [OpenCV](https://opencv.org/): As mentioned above we use this module is used for real-time computer vision applications
+
+### Argument Parser
+This section we use in order to parse our any required arguments
+```python
+ap = argparse.ArgumentParser()
+ap.add_argument("-v", "--video", required=True, help="path to input video")
+args = vars(ap.parse_args())
+```
+
+Here we create an instance of the ```ArgumentParser``` object. We then add a required argument which requires the user to specify the path to a video feed that they would want our software to operate on. Lastly we grab all the arguments and store them inside our args variables as ```vars``` which stores objects inside a dictionary object.

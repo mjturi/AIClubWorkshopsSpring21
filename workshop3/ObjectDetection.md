@@ -115,5 +115,8 @@ net.setInput(blob)
 layerOutputs = net.forward(ln)
 ```
 
-First we create a blob object through OpenCV. Typically when you want to run a model, you preprocess your data so it matches what the model is looking for. In this case the ```blobFromImage``` function sharpens our image and performs more specific preprocessing techniques. Here's an example:
-![Blob](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pyimagesearch.com%2F2017%2F11%2F06%2Fdeep-learning-opencvs-blobfromimage-works%2F&psig=AOvVaw2Ps9gmdchYJH7pyLuQkyaq&ust=1612729821200000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOjrgfSM1u4CFQAAAAAdAAAAABAD)
+First we create a blob object through OpenCV. Typically when you want to run a model, you preprocess your data so it matches what the model is looking for. In this case the ```blobFromImage``` function performs mean subtraction and scales the image. Here's an example of mean subtraction:
+
+<img src="https://pyimagesearch.com/wp-content/uploads/2017/11/blob_from_images_mean_subtraction.jpg"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />

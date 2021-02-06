@@ -69,7 +69,7 @@ LABELS = open("models/coco.names").read().strip().split("\n")
 
 Here we use a file that already has the names of the output layer. We won't be using this implementation, but just know it is an alternative
 
-### Capturing Video
+## Capturing Video
 Lastly, before we get started detecting objects in frame, we need to use OpenCV in order to process every frame in the video. We do that by creating a ```VideoCapture``` object in OpenCV:
 ```python
 cap = cv2.VideoCapture(args["video"])
@@ -82,7 +82,7 @@ The way in which we detect objects on a video is by running YOLO on every frame 
 
 As you can imagine this is computationally expensive. Running a model on every frame eats up a lot of memory. In this situation since we are processing our results using our CPU, it gets pretty expensive quick. There are more advanced methods to help with processing our results faster and getting a quick runtime speed but for the simplicity of this workshop, we will be keeping it like this
 
-### Reading a Frame
+## Reading a Frame
 Using the ```VideoCapture``` object we created, we'll extract the first frame:
 ```python
 _, frame = cap.read()

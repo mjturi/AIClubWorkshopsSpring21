@@ -14,7 +14,7 @@ title: Spring 2021 Workshops
 
 # Table of Contents
 - [Python Refresher](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/pythonrefresher/python)
-- [Computer Vision: Object Detection](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop3/ObjectDetection#processing-every-frame)
+- [Computer Vision: Object Detection](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop3/ObjectDetection)
 - [Computer Vision: Object Tracking](#) **(WIP)**
 - [Sentiment Analysis](#) **(WIP)**
 - [TBA](#) **(WIP)**

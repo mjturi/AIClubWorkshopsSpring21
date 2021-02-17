@@ -36,7 +36,7 @@ Let's take alook at what these modules actually do:
 - [OpenCV](https://opencv.org/): As mentioned above we use this module is used for real-time computer vision applications
 
 ## Argument Parser
-This section we use in order to parse our any required arguments
+This section we use in order to parse any required arguments
 ```python
 ap = argparse.ArgumentParser()
 ap.add_argument("-v", "--video", required=True, help="path to input video")
@@ -75,7 +75,7 @@ Lastly, before we get started detecting objects in frame, we need to use OpenCV 
 cap = cv2.VideoCapture(args["video"])
 ```
 
-This will go and allow us to process the video. Here we pass in the video argument we require using the argparser library we previously implemented. We did this because it allows us to quickly change the video we want to process without directly changing the code.
+This allows us to process the video. Here we pass in the video argument we require using the argparser library we previously implemented. We did this because it allows us to quickly change the video we want to process without directly changing the code.
 
 # Processing Every Frame
 The way in which we detect objects on a video is by running YOLO on every frame and visually diplaying our results. In this section we will be working inside an infinite while loop. This will allow us to go frame by frame running our results.
@@ -94,7 +94,7 @@ Now we also want to extract data from the frame for future use:
 HEIGHT, WIDTH, CHANNEL = frame.shape
 ```
 
-This just gives us some useful information from the frame like the shape and height.
+This just gives us some useful information from the frame like the width and height.
 
 ## Displaying our frames
 I tend to put this section at the bottom of the while loop, however I always include it first so we can see what we're working with.
@@ -123,7 +123,7 @@ First we create a blob object through OpenCV. Typically when you want to run a m
 
 If you're really interested in what happens behind the scenes of this function check out [PyImageSearch's](https://www.pyimagesearch.com/2017/11/06/deep-learning-opencvs-blobfromimage-works/) blog post.
 
-Now we pass in that blob information by setting it as an input and then having the model and saving our results to tha ```layerOutputs``` variable
+Now we pass in that blob information by setting it as an input and then having the model and saving our results to the ```layerOutputs``` variable
 
 ## Storing results
 For the next portion, we'll want to store our results so when we print our results, we'll have that information handy
@@ -134,7 +134,7 @@ classIDs = []
 ```
 
 Here we declare lists where we'll store information:
-- boxes: Here we will store all the bounding boxes coordinates for each person
+- boxes: Here we will store the bounding boxes coordinates for each person
 - confidences: This will give us the confidence level of the model when it makes a prediction
 - classIDs: This will tell us the class type of each object detected. We'll only be using the people class types
 
@@ -157,7 +157,7 @@ confidence = scores[classID]
 ```
 
 In this instance, scores gives us the probability of each of the 80 classes. It is a list with 80 different floats that give the probability of a detected object.
-USing that information, we take the highest probability and assign it as the detected object. We then grab that score and assign it to the confidence
+Using this information, we take the highest probability and assign it as the detected object. We then grab that score and assign it to the confidence
 
 ## Grabbing the Box Locations
 Now that we have the detections, in that same nest loop, we want to grab the locations of where the people are:
@@ -167,10 +167,10 @@ if confidence > 0.5 and classID == 0:
     centerX, centerY, w, h = box.astype("int")
 
     x = int(centerX - (w / 2))
-    y = int(centerY - (h / 2))
+    y = int(centerY - (h / 2)) 
 ```
 
-Here we have an if statement that will only execute if the model is atleast 50% confident about its detection and if it is classID = 0. The classID is the type of object is it. If you look in the ```models/coco.names``` file you can see all the classes in order. The first class, 0th index, is labeled person. So here we are only drawing our detections for people.
+Here we have an if statement that will only execute if the model is at least 50% confident about its detection and if its classID = 0. The classID is the type of object is it. If you look in the ```models/coco.names``` file you can see all the classes in order. The first class, 0th index, is labeled person. So here we are only drawing our detections for people.
 
 Now when we're inside the if condition, we want to get the location of the people relative to the frame. Our model detected objects relative to the frames position after it was preprocessed. We want to convert those results by multiplying those values with the height and width of the frame to properly convert and accurately locate the object. We then take these converted values and assign them to 4 different variables.
 

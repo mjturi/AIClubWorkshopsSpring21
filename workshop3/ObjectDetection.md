@@ -176,6 +176,13 @@ Now when we're inside the if condition, we want to get the location of the peopl
 
 Lastly, we want the x and y coordinates of the top left corner. We want these values because when we draw the rectangle around each distinct person, we have to specify opposite diagonal corners. This conversion will allow us to do that.
 
+```python
+boxes.append([x, y, int(w), int(h)])
+confidences.append(float(confidence))
+classIDs.append(classID)
+```
+All we do now is store this gathered information in a list and this process will be repeated for every detected object
+
 ## Non-maxima suppresion
 YOLO does not apply non-maxima suppression for us. Non-maxima suppresion helps to suppress overlapping bounding boxes.
 

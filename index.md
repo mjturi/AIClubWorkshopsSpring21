@@ -35,7 +35,12 @@ Here I left resources that I have created or used when learning different AI con
 
 #### Computer Vision
 - My Computer Vision Series of workshops
-  - test 
+  - [Computer Vision: Image Processing](https://hectorenevarez.github.io/AIClubWorkshopsFall20/#workshop-6-computer-vision-1) : [**Video Version](https://www.youtube.com/watch?v=n7pdUtYcOuM&feature=youtu.be)
+  - [Computer Vision: Optical Flow](https://hectorenevarez.github.io/AIClubWorkshopsFall20/#workshop-7-computer-vision-2) : [**Video Version**](https://www.youtube.com/watch?v=Ljh_cVrtTfw&feature=youtu.be)
+  - [Computer Vision: Convolutional Neural Networks](https://hectorenevarez.github.io/AIClubWorkshopsFall20/#workshop-10-convolutional-neural-network) : [**Video Version**](https://www.youtube.com/watch?v=n-Dlk18w9f8&feature=youtu.be)
+- [OpenCV Tutorial: A Guide to Learn OpenCV](https://www.pyimagesearch.com/2018/07/19/opencv-tutorial-a-guide-to-learn-opencv/) A quick tutorial of OpenCV by Adrian Rosebrock
+- [OpenCV Youtube Tutorial](https://www.youtube.com/playlist?list=PLvVx8lH-gGeC8XmmrsG855usswhwt5Tr1) A complete breakdown of different CV functions in OpenCV by Sentdex
 
 #### Neural Networks
 - [Neural Networks Tutorial](https://colab.research.google.com/drive/1lnqrLF2NBJgoSeAf_WD3pqnGgVjFmazV?usp=sharing) An in depth explanation of how Neural Networks function by Joshua Zingale
+- [Neural Networks workshop](https://hectorenevarez.github.io/AIClubWorkshopsFall20/#workshop-8-computer-vision-3) A workshop I previously gave on Neural Networks : [**Video Version**](https://www.youtube.com/watch?v=cj40wMCOGgU&feature=youtu.be)

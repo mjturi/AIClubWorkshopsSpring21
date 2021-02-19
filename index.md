@@ -21,7 +21,7 @@ title: Spring 2021 Workshops
 - [Anomaly Detection](#) **(WIP)**
 
 # AI-A-THON
-More information regarding the AI-A-THON to be posted in the coming weeks
+- [AI-A-THON](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/AIATHON/one)
 
 # Resources
 Here I left resources that I have created or used when learning different AI concepts
@@ -32,6 +32,10 @@ Here I left resources that I have created or used when learning different AI con
 - [Introduction To Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop1/python_tutorial) a simple tutorial I created : [**Video Version**](https://www.youtube.com/watch?v=jXLiFqFxmO4&feature=youtu.be)
 - [Advanced Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop2/Advanced_python.html) a more advanced Python tutorial I created : [**Video Version**](https://www.youtube.com/watch?v=xy09XNUykho&feature=youtu.be)
 - [Learn Python Programming:](https://www.programiz.com/python-programming) A website that teaches Python in detail
+
+#### Computer Vision
+- My Computer Vision Series of workshops
+  - test 
 
 #### Neural Networks
 - [Neural Networks Tutorial](https://colab.research.google.com/drive/1lnqrLF2NBJgoSeAf_WD3pqnGgVjFmazV?usp=sharing) An in depth explanation of how Neural Networks function by Joshua Zingale

@@ -30,7 +30,7 @@ Here I left resources that I have created or used when learning different AI con
 - [Learn Python Programming:](https://www.programiz.com/python-programming) A website that teaches Python in detail
 
 #### Computer Vision
-- My Computer Vision Series of workshops
+- My Computer Vision Series of workshops from Fall 2020
   - [Computer Vision: Image Processing](https://hectorenevarez.github.io/AIClubWorkshopsFall20/#workshop-6-computer-vision-1) : [**Video Version**](https://www.youtube.com/watch?v=n7pdUtYcOuM&feature=youtu.be)
   - [Computer Vision: Optical Flow](https://hectorenevarez.github.io/AIClubWorkshopsFall20/#workshop-7-computer-vision-2) : [**Video Version**](https://www.youtube.com/watch?v=Ljh_cVrtTfw&feature=youtu.be)
   - [Computer Vision: Convolutional Neural Networks](https://hectorenevarez.github.io/AIClubWorkshopsFall20/#workshop-10-convolutional-neural-network) : [**Video Version**](https://www.youtube.com/watch?v=n-Dlk18w9f8&feature=youtu.be)

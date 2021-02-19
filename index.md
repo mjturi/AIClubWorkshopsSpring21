@@ -13,7 +13,7 @@ title: Spring 2021 Workshops
 - For more information about myself you can check out my [personal website](https://hectorenevarez.github.io/)
 
 # Table of Contents
-- [Python Refresher](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/pythonrefresher/python)
+- [Python Refresher](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/pythonrefresher/python) : [**Video Version**](https://www.youtube.com/watch?v=rIaw--EA91M&feature=youtu.be)
 - [Computer Vision: Object Detection](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop3/ObjectDetection)
 
 # AI-A-THON

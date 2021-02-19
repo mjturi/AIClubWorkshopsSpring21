@@ -14,6 +14,7 @@ The AI-A-THON is open to current club members as well as SDSU students for ```FR
 Going into the competition, it's important to understand the structure of the event. In the following section, the structure and timeline of the event will be broken down.
 
 ### Registration
+#### [CLICK HERE TO REGISTER](https://forms.gle/sXFUFn6uqy5R9d6M8)
 To enter the competition, one must first be registered. The registration portion involves registering how many members will be in a specified group. a group can have up to a maximum of 4 people. One may also work alone. The registration must be done either before or on ```February 26 at 11:00AM```. Members will be able to register during our club meeting time.
 
 ### Day 1

@@ -44,6 +44,6 @@ Bonus points will also be awarded for the following optional category:
 1. Live Demo: How well the product works in real time
 
 ## Additional Information
-If you haven't registered you can register [here](https://docs.google.com/forms/d/e/1FAIpQLScldFSFd0YdkZDhp3vC8JGQVvVmPMouHb4tvXlIHBvIwPyyPQ/viewform)
-Join our discord [here](https://discord.gg/Phe6Tb9M)
+If you haven't registered you can register [here](https://docs.google.com/forms/d/e/1FAIpQLScldFSFd0YdkZDhp3vC8JGQVvVmPMouHb4tvXlIHBvIwPyyPQ/viewform)<br>
+Join our discord [here](https://discord.gg/Phe6Tb9M)<br>
 join our slack [here](https://join.slack.com/t/sdsuaiteam/shared_invite/zt-likiutwm-2vR_A_cF7a5Ph9gmwJne4A)

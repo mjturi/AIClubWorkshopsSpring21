@@ -22,7 +22,8 @@ title: Spring 2021 Workshops
 # Resources
 Here I left resources that I have created or used when learning different AI concepts
 #### Workshop Prep
-- [Computer Vision](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop3/settingup) Quick guide on getting everything set up for the computer vision workshops
+- [Object Detection](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop3/settingup) Quick guide on getting everything set up for the object detection workshop
+- [Object Tracking](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop4/settingup) Quick guide on getting everything set up for the object Tracking workshop
 
 #### Learning Python
 - [Introduction To Python:](https://hectorenevarez.github.io/AIClubWorkshopsFall20/Workshop1/python_tutorial) a simple tutorial I created : [**Video Version**](https://www.youtube.com/watch?v=jXLiFqFxmO4&feature=youtu.be)

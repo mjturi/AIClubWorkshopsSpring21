@@ -30,8 +30,8 @@ The submission should clearly explain your tool and its purpose. There is no exp
 - [Covid Risk Mitigator](https://github.com/HectorENevarez/Covid-Risk-Detection)
 
 ## Prize
-1st place - 30$ AWS credit
-2nd place - 20$ AWS credit
+1st place - 30$ AWS credit<br>
+2nd place - 20$ AWS credit<br>
 3rd place - 10$ AWS credit
 
 ## Judging

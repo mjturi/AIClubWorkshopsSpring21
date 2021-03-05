@@ -101,7 +101,7 @@ This allows us to process the video. Here we pass in the video argument we requi
 
 ## Iterating Through Every Frame
 Now that we have all our variables set up we can begin to iterate through every frame. We use our ```VideoCapture``` object to pull a frame every iteration in an infinite while loop.
-```pytohn
+```python
 while True:
     _, frame = cap.read()
     if frame is None:

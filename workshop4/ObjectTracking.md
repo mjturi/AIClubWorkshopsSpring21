@@ -133,7 +133,7 @@ We then compare the key pressed with ```ord('s')``` which grabs the unicode valu
 
 We then initialize the bounding box value using the ```cv2.selectROI()``` function which will prompt the user, in the frame, to drag and create a bounding box around an object they want to track. This function will return the coordinates to the bounding box.
 
-Finally we start the fps object to get the fps diplayed in the frame.
+Finally we start the fps object to get the fps displayed in the frame.
 
 ```python
 if key == ord('c'):
@@ -147,7 +147,7 @@ if key == ord('q'):
 
 Afterwards, we also create a condition to allow the user to reset the tracker. Again, since we are only allowing for one tracker to be created, we allow the user to reset and track something else by pressing the ```c``` key.
 
-We also have an exit condition that gracefully exits the loop whenever the user pressed ```q```.
+We also have an exit condition that gracefully exits the loop whenever the user presses ```q```.
 
 ## Updating the Bounding Box
 This portion of code should fall above the section we just completed. Reference the entire code below if there is any confusion.
@@ -166,7 +166,7 @@ if bbox is not None: # checking for bounding box
     fps.update()
     fps.stop()
 ```
-We then check to see if we have a bounded box(The user selected an object) and update our tracker. Our ```tracker.update``` method takes in a frame and returns a return status(True or False) and the new bounding box. 
+We then check to see if we have a bounded box(The user selected object) and update our tracker. Our ```tracker.update``` method takes in a frame and returns a return status(True or False) and the new bounding box. 
 
 We then update our fps counter and use the stop function to get the time elapsed.
 

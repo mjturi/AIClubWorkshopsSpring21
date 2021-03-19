@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Nueral Networks and Tensorflow
+title: Neural Networks and Tensorflow
 show_in_menu: false
 disable_anchors: true
 ---
 
 # Neural Netowrks with TensorFlow
-In this workshop we will be trainin a neural network, using tensorflow, to classify different clothing pieces in the fashion-mnist dataset.
+In this workshop we will be training a neural network, using tensorflow, to classify different clothing pieces in the fashion-mnist dataset.
 
 ## What is Tensorflow?
 ```Tensorflow(TF)``` is an open source library for numerical computation and machine learning. Initially when ```Tensorflow 1.0``` was released, it had a high learning curve do to its unconventional structure and un-pythonic syntax. This led to the release of ```Tensorflow 2.0``` which incorporated ```Keras```; a simple to use deep learning framework. Due to this change Tensorflow is now intuitive and easy to use.
@@ -53,9 +53,9 @@ Above, we can see an example image. The neural network is composed of 3 types of
 ### What is the function of the neuron?
 Each neuron performs a set of mathematical operations to derive an output.
 
-![Nueron](Neuron.png)
+![Neuron](Neuron.png)
 
-Above is an example of a randomly selected neuron. Each neuron will have a connection with every neuron in the previous layer. The way each neuron obtains its value is simple. It begins by summing up every input. The input consists of the input value(x) as well as an associated weight(w). When the model is trained, these weights shift around in order to get the optimal model. The weights carry influence as to how strong a connection between two neurons are. The higher the weight the influence of the neuron. 
+Above is an example of a randomly selected neuron. Each neuron will have a connection with every neuron in the previous layer. The way each neuron obtains its value is simple. It begins by summing up every input. The input consists of the input value(x) as well as an associated weight(w). When the model is trained, these weights shift around in order to get the optimal model. The weights carry influence as to how strong a connection between two neurons are. The higher the weight the greater the influence of the neuron. 
 
 
 ![NN1](NN1.png)
@@ -72,7 +72,7 @@ Finally, to obtain the neurons output value, we pass it through an activation fu
 
 Rectified Linear Unit(ReLU) is a standard activation function. It is widely used because of how well it works. Typically when you are unsure of which activation function to use, ReLU should be your go to.
 
-The steps outlined above occur through every neuron in the neueral network until the network reaches its end. This process of passing data through the neural network is called **forward propogation**. Once this process is completed we move on to backpropogation.
+The steps outlined above occur through every neuron in the neural network until the network reaches its end. This process of passing data through the neural network is called **forward propogation**. Once this process is completed we move on to backpropogation.
 
 ## What is backpropogation?
 **Back-propagation** fine tunes the model based on the results of forward propogation every iteration. After a forward pass, the neural network calculates the loss function and propogates those results backwards to tune the weights and biases. Since the model is updating its weights and biases every iteration, the model should become more optimized. The goal is to lower this error rate.
@@ -154,7 +154,7 @@ model.add(layers.Dense(10)) # Output layer
 
 ```
 
-We begin by defining our model. We create a ```Sequential()``` class that will contain all the layers of our model. This class is the standard class for creating simlple neural networks. It is typically what you'll be using for creating models.
+We begin by defining our model. We create a ```Sequential()``` class that will contain all the layers of our model. This class is the standard class for creating simple neural networks. It is typically what you'll be using for creating models.
 
 We then use the ```add()``` function to add layers to our model. We first define our input layer by flattening the image. Neural networks take 1-dimensional data, so we flatten our image. Essentially we take all the rows and stack them vertically to create a 1-dimensional shape.
 

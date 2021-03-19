@@ -6,7 +6,7 @@ disable_anchors: true
 ---
 
 # Neural Netowrks with TensorFlow
-In this workshop we will be .....
+In this workshop we will be trainin a neural network, using tensorflow, to classify different clothing pieces in the fashion-mnist dataset.
 
 ## What is Tensorflow?
 ```Tensorflow(TF)``` is an open source library for numerical computation and machine learning. Initially when ```Tensorflow 1.0``` was released, it had a high learning curve do to its unconventional structure and un-pythonic syntax. This led to the release of ```Tensorflow 2.0``` which incorporated ```Keras```; a simple to use deep learning framework. Due to this change Tensorflow is now intuitive and easy to use.
@@ -57,19 +57,19 @@ Each neuron performs a set of mathematical operations to derive an output.
 
 Above is an example of a randomly selected neuron. Each neuron will have a connection with every neuron in the previous layer. The way each neuron obtains its value is simple. It begins by summing up every input. The input consists of the input value(x) as well as an associated weight(w). When the model is trained, these weights shift around in order to get the optimal model. The weights carry influence as to how strong a connection between two neurons are. The higher the weight the influence of the neuron. 
 
-<p align="center">
+<center>
 ![NN1](NN1.png)
-</p>
+</center>
 Above we summed up every input which consisted of the input multiplied by the weight. We can further simplify this as the summation equals the dot product of the vectors x and w.
 
 Furthermore, we also have to add the bias(b) term to transpose the constant value to obtain the output values.
-<p align="center">
+<center>
 ![NN2](NN2.png)
-</p>
+</center>
 Finally, to obtain the neurons output value, we pass it through an activation function in order to introduce non-linearity into the neurons output. Without the activation function, our neural network is essentially a linear regression model. With the activation function, our model is able to learn more complex tasks. There are several activation functions, but in this post we will be going over the **ReLU activation function**.
-<p align="center">
+<center>
 ![RELU](relu.png)
-</p>
+</center>
 Rectified Linear Unit(ReLU) is a standard activation function. It is widely used because of how well it works. Typically when you are unsure of which activation function to use, ReLU should be your go to.
 
 The steps outlined above occur through every neuron in the neueral network until the network reaches its end. This process of passing data through the neural network is called **forward propogation**. Once this process is completed we move on to backpropogation.
@@ -90,7 +90,7 @@ For all the optimizers on keras, check out their [docs page on optimizers](https
 ## Getting started with the workshop
 For this live-coding portion, we'll be training our own neural network using tensorflow! Our goal is to classify different clothing items from the fashion-mnist dataset.
 
-#### LIVE CODING LINK HERE ####
+To begin the live coding workshop [click here](https://colab.research.google.com/drive/1J8nZzc90pJQDqw74sIaxkzMTLGqwfsQ6?usp=sharing)
 
 ### Let's Begin
 
@@ -158,9 +158,9 @@ We begin by defining our model. We create a ```Sequential()``` class that will c
 
 We then use the ```add()``` function to add layers to our model. We first define our input layer by flattening the image. Neural networks take 1-dimensional data, so we flatten our image. Essentially we take all the rows and stack them vertically to create a 1-dimensional shape.
 
-<p align="center">
+<center>
 ![image Flatten](data:image/png;base64,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)
-</p>
+</center>
 
 Afterwards, we add our first hidden layer. This is a standard layer with 128 neurons and it uses the relu acitvation function.
 

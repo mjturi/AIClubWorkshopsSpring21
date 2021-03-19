@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Object Detection
+title: Nueral Networks and Tensorflow
 show_in_menu: false
 disable_anchors: true
 ---
@@ -158,3 +158,31 @@ We begin by defining our model. We create a ```Sequential()``` class that will c
 We then use the ```add()``` function to add layers to our model. We first define our input layer by flattening the image. Neural networks take 1-dimensional data, so we flatten our image. Essentially we take all the rows and stack them vertically to create a 1-dimensional shape.
 
 ![image Flatten](data:image/png;base64,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)
+
+Afterwards, we add our first hidden layer. This is a standard layer with 128 neurons and it uses the relu acitvation function.
+
+Lastly, we declare our output layer. The neurons in this layer should correspond to the amount of objects you are trying to classify. In this example we are classifying 10 different objects so we'll have our output layer include 10 neurons.
+
+```python
+model.compile(
+    optimizer='adam',
+    loss=tf.keras.losses.SparseCategoricalCrossentropy,
+    metrics=['accuracy']
+    )
+```
+
+Now we specify a couple more metrics for our model. We include the optimizer we'll want to use as well as the loss function. We also include a metric to display the accuracy of our model as we're training it.
+
+```python
+model.fit(x_train, y_train, epochs=10)
+```
+
+Finally, we use the ```fit()``` method to begin training our model. We specify our training data as well as how many times we want to iterate through our dataset. This iteration is called an ```epoch```. We specify 10 epochs which means it will complete a full training cycle 10 times.
+
+```python
+test_loss, test_acc = model.evaluate(x_test,  y_test, verbose=2)
+```
+
+Now that our model is trained, we pair it up against our testing data to see how well it actually did.
+
+The entire code for this workshop, including the portions not mentioned here can be found [here](https://colab.research.google.com/drive/1S_UDN1W8ffc7CyR-3MXc4_VuZAxpGOx4?usp=sharing)

@@ -15,7 +15,8 @@ title: Spring 2021 Workshops
 # Table of Contents
 - [Python Refresher](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/pythonrefresher/python) [(**Video Version**)](https://www.youtube.com/watch?v=rIaw--EA91M&feature=youtu.be)
 - [Computer Vision: Object Detection](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop3/ObjectDetection) [(**Video Version**)](https://www.youtube.com/watch?v=7jLAWt7nafI)
-- [Computer Vision: Object Tracking](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop4/ObjectTracking)
+- [Computer Vision: Object Tracking](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop4/ObjectTracking) [(**Video Version**)](https://www.youtube.com/watch?v=yufYHT4XCps)
+- [Neural Networks](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop5/tensorflowAndNN) 
 
 # AI-A-THON
 - [AI-A-THON](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/AIATHON/one)

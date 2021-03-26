@@ -5,7 +5,7 @@ show_in_menu: false
 disable_anchors: true
 ---
 
-# Neural Netowrks with TensorFlow
+# Neural Networks with TensorFlow
 In this workshop we will be trainin a neural network, using tensorflow, to classify different clothing pieces in the fashion-mnist dataset.
 
 ## What is Tensorflow?

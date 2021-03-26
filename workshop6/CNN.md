@@ -133,6 +133,6 @@ As mentioned a CNN extracts features and then connects to a neural network.
 ## Live coding
 Let's get into the live coding example. This week we will be creating a cnn to predict types of objects. We will be using the CIFAR-10 dataset to train our model. The CIFAR-10 dataset is a popular dataset that provides thousands of images on different types of objects. Let's get started!
 
-[Live coding](https://colab.research.google.com/drive/192hpolyD8Ip2UMAehh1xmZkf4ofWTe1y?usp=sharing)
+[Live coding](https://colab.research.google.com/drive/192hpolyD8Ip2UMAehh1xmZkf4ofWTe1y?usp=sharing) <br>
 [Full code](https://colab.research.google.com/drive/1pJlxubM7SIAyWFy9AKGW6lLyNXeMQ3nW?usp=sharing)
 

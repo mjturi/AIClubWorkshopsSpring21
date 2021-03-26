@@ -9,7 +9,7 @@ title: Spring 2021 Workshops
 # Convolutional Neural Networks
 > "In deep learning, a convolutional neural network is a class of deep neural networks, most commonly applied to analyzing visual imagery. " [(Valueva)](https://www.sciencedirect.com/science/article/abs/pii/S0378475420301580?via%3Dihub)
 
-// add more info explaining cnns here
+A convolutional neural network, also known as CNN, is a type of neural network the specializees in processing grid-like topology, such as an image. In this workshop we will be going over neural networks and their structure. We will also take a look at their individual components and examine why they are so good for image classification problems.
 
 ## CNN vs NN
 If we look back to our previous workshop, we classified different clothing items using a simple neural network. While our objective was easy, what happenes when we want to classifiy more complex images. How do we create a neural network that given images of a couple models of cars, can classify any type of car.
@@ -131,7 +131,8 @@ As mentioned a CNN extracts features and then connects to a neural network.
 [This website](https://www.cs.ryerson.ca/~aharley/vis/conv/flat.html) shows the process of a CNN really well.  
 
 ## Live coding
-Let's get into the live coding example
+Let's get into the live coding example. This week we will be creating a cnn to predict types of objects. We will be using the CIFAR-10 dataset to train our model. The CIFAR-10 dataset is a popular dataset that provides thousands of images on different types of objects. Let's get started!
+
 [Live coding](https://colab.research.google.com/drive/192hpolyD8Ip2UMAehh1xmZkf4ofWTe1y?usp=sharing)
 [Full code](https://colab.research.google.com/drive/1pJlxubM7SIAyWFy9AKGW6lLyNXeMQ3nW?usp=sharing)
 

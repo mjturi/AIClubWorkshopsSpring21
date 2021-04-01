@@ -1,9 +1,8 @@
 ---
-layout: full
-homepage: true
+layout: page
+title: Convolutional Neural Networks 
+show_in_menu: false
 disable_anchors: true
-show_in_menu: true
-title: Spring 2021 Workshops
 ---
 
 # Convolutional Neural Networks

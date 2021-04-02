@@ -274,11 +274,9 @@ train(train_dataset, EPOCHS)
 ```
 
 # References
-The following section include links to various references used throughout this tutorial.
+The following section include links to various references used throughout this tutorial.<br>
 [1] [GANs with Keras and TensorFlow](https://www.pyimagesearch.com/2020/11/16/gans-with-keras-and-tensorflow/)<br>
 [2] [GANs — A Brief Introduction to Generative Adversarial Networks](https://medium.com/analytics-vidhya/gans-a-brief-introduction-to-generative-adversarial-networks-f06216c7200e#:~:text=How%20does%20it%20work%3F,fake%20data%20from%20real%20data.)<br>
 [3] [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/tutorials/generative/dcgan)<br>
 [4] [Batch Normalization In Neural Networks Explained (Algorithm Breakdown)](https://towardsdatascience.com/batch-normalization-explained-algorithm-breakdown-23d2794511c)<br>
 [5] [Using TensorFlow and GradientTape to train a Keras model](https://www.pyimagesearch.com/2020/03/23/using-tensorflow-and-gradienttape-to-train-a-keras-model/)<br>
-[6] []()<br>
-[7] []()<br>

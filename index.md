@@ -19,7 +19,8 @@ title: Spring 2021 Workshops
 - [Neural Networks](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop5/tensorflowAndNN) [(**Video Version**)](https://www.youtube.com/watch?v=MnuOyeMUt80&feature=youtu.be)
 - [Convolutional Neural Networks](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop6/CNN) [(**Video Version**)](https://www.youtube.com/watch?v=kT5OexOTcKM)
 - [Generative Adversial Networks](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop7/GAN) 
-- [Optical Character Recognition](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop8/OCR) 
+- [Optical Character Recognition](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/workshop8/OCR)
+- [Facial Landmark Detection](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/Workshop9/DLIB) 
 
 # AI-A-THON
 - [AI-A-THON](https://hectorenevarez.github.io/AIClubWorkshopsSpring21/AIATHON/one)

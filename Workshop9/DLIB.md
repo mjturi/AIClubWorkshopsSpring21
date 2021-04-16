@@ -6,16 +6,16 @@ disable_anchors: true
 ---
 
 # What is DLIB?
-DLIB is an open source library that allows you to perform real world machine learning problems easily. The library is large and its tool are robust. Take a look at their [website](http://dlib.net/) to see all the different tools and applications that the library comes with. For todays workshop we'll be highlighting what I feel to be a really cool tool that the library provides.
+DLIB is an open source library that allows you to solve real world machine learning problems easily. The library is large and its tool are robust. Take a look at their [website](http://dlib.net/) to see all the different tools and applications that the library comes with. For today's workshop we'll be highlighting what I think is a really cool tool that the library provides.
 
 ## What is facial landmark detection
-Facial landmark detection is the ability of a computer to detect and localize regions of the face such as the eyes, eyeborws, nose, and mouth. Here is an example of facial landmarks using a popular library that detects pose estimation, [Openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
+Facial landmark detection is the ability of a computer to detect and localize regions of the face such as the eyes, eyebrows, nose, and mouth. Here is an example of facial landmarks using a popular library that detects pose estimation, [Openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
 
 <p align="center">
   <img width="460" height="300" src="https://i.ytimg.com/vi/vF_V6i-h2nY/maxresdefault.jpg">
 </p>
 
-As you can see in the image, different facial landmarks are detected and tracked in the frame above. Dlib allows us to incorportate this same feature easily! For our purposes today, we will be using a pretrained model to detect facial landmarks using dlib. 
+As you can see in the image, different facial landmarks are detected and tracked in the frame above. Dlib allows us to incorporate this same feature easily! For our purposes today, we will be using a pretrained model to detect facial landmarks with dlib. 
 
 The model estimates 68 different (x, y) coordinates on the face:
 
@@ -80,14 +80,14 @@ Now that those are loaded in we can begin making our detections.
 detections = detector(img)
 ```
 
-We use the detector in order to create a bounding box around any faces within the image.
+We use the detector to create a bounding box around any faces within the image.
 
 ```python
 shape = predictor(img, detections[0])
 shape = face_utils.shape_to_np(shape)
 ```
 
-We then use our predictor in order to get all the points for our iamge. We pass in the detections at index 0 because we are only using it to detect one face. If we wanted to use it to detect more than 1 face, we would insert this following section into a for loop and enumerate through each detection, making a prediction at each point.
+We then use our predictor in order to get all the points for our image. We pass in the detections at index 0 because we are only using it to detect one face. If we wanted to use it to detect more than 1 face, we would insert this following section into a for loop and enumerate through each detection, making a prediction at each point.
 
 Then, we convert the given shape to a numpy array using the [imutils shape_to_np function](https://github.com/jrosebr1/imutils/blob/c12f15391fcc945d0d644b85194b8c044a392e0a/imutils/face_utils/helpers.py#L44). This allows us to more easily work with the data we need.
 
